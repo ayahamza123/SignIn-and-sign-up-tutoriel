@@ -1,4 +1,4 @@
-# -SpringBoot-SpringSecurity-jwt-authentication
+# SpringBoot-SpringSecurity-jwt-authentication
 Spring Boot + Security: Token Based Authentication example with JWT, Authorization, Spring Data &amp; MySQL
 
 # User Registration, User Login and Authorization process.
