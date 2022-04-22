@@ -5,11 +5,6 @@ import javax.validation.constraints.NotBlank;
 import javax.validation.constraints.Size;
 import java.util.Set;
 
-/**
- * @author Ala Hadj Brahim <ala.hajbrahim@gmail.com>
- * @project ProjetLoginRegisterjwt
- * @Created 18/08/2021  6:23.
- */
 public class SignupRequest {
     @NotBlank
     @Size(min = 3, max = 20)

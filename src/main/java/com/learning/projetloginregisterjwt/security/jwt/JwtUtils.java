@@ -1,8 +1,6 @@
 package com.learning.projetloginregisterjwt.security.jwt;
 
 
-import java.util.Date;
-
 import com.learning.projetloginregisterjwt.security.services.UserDetailsImpl;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -11,11 +9,10 @@ import org.springframework.security.core.Authentication;
 import org.springframework.stereotype.Component;
 import io.jsonwebtoken.*;
 
-/**
- * @author Ala Hadj Brahim <ala.hajbrahim@gmail.com>
- * @project ProjetLoginRegisterjwt
- * @Created 16/08/2021  9:08.
- */
+import java.util.Date;
+
+
+
 
 @Component
 public class JwtUtils {
@@ -30,12 +27,15 @@ public class JwtUtils {
     public String generateJwtToken(Authentication authentication) {
 
         UserDetailsImpl userPrincipal = (UserDetailsImpl) authentication.getPrincipal();
+        byte[] bytes = new byte[36]; // 36 bytes * 8 = 288 bits, a little bit more than
+        // the 256 required bits
+
 
         return Jwts.builder()
                 .setSubject((userPrincipal.getUsername()))
                 .setIssuedAt(new Date())
                 .setExpiration(new Date((new Date()).getTime() + jwtExpirationMs))
-                .signWith(SignatureAlgorithm.HS512, jwtSecret)
+                .signWith(SignatureAlgorithm.HS512,jwtSecret)
                 .compact();
     }
 

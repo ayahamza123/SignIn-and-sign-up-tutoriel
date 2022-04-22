@@ -6,11 +6,6 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
-/**
- * @author Ala Hadj Brahim <ala.hajbrahim@gmail.com>
- * @project ProjetLoginRegisterjwt
- * @Created 18/08/2021  6:41.
- */
 
 @CrossOrigin(origins = "*", maxAge = 3600)
 @RestController

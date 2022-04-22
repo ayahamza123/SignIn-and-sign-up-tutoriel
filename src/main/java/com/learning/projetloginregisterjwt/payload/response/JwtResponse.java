@@ -2,11 +2,7 @@ package com.learning.projetloginregisterjwt.payload.response;
 
 import java.util.List;
 
-/**
- * @author Ala Hadj Brahim <ala.hajbrahim@gmail.com>
- * @project ProjetLoginRegisterjwt
- * @Created 18/08/2021  6:26.
- */
+
 public class JwtResponse {
     private String token;
     private String type = "Bearer";

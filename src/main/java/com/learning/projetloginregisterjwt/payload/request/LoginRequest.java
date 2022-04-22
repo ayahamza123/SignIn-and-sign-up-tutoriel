@@ -2,11 +2,7 @@ package com.learning.projetloginregisterjwt.payload.request;
 
 import javax.validation.constraints.NotBlank;
 
-/**
- * @author Ala Hadj Brahim <ala.hajbrahim@gmail.com>
- * @project ProjetLoginRegisterjwt
- * @Created 18/08/2021  6:22.
- */
+
 public class LoginRequest {
     @NotBlank
     private String username;

@@ -11,11 +11,7 @@ import org.slf4j.LoggerFactory;
 import org.springframework.security.core.AuthenticationException;
 import org.springframework.security.web.AuthenticationEntryPoint;
 import org.springframework.stereotype.Component;
-/**
- * @author Ala Hadj Brahim <ala.hajbrahim@gmail.com>
- * @project ProjetLoginRegisterjwt
- * @Created 16/08/2021  8:55.
- */
+
 @Component
 public class AuthEntryPointJwt implements AuthenticationEntryPoint {
 

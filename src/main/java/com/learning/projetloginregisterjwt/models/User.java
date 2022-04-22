@@ -1,10 +1,6 @@
 package com.learning.projetloginregisterjwt.models;
 
-/**
- * @author Ala Hadj Brahim <ala.hajbrahim@gmail.com>
- * @project ProjetLoginRegisterjwt
- * @Created 16/08/2021  8:36.
- */
+
 import java.util.HashSet;
 import java.util.Set;
 

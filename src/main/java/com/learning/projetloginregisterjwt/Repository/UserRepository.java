@@ -6,11 +6,7 @@ import org.springframework.stereotype.Repository;
 
 import java.util.Optional;
 
-/**
- * @author Ala Hadj Brahim <ala.hajbrahim@gmail.com>
- * @project ProjetLoginRegisterjwt
- * @Created 16/08/2021  8:43.
- */
+
 
 @Repository
 public interface UserRepository extends JpaRepository<User , Long> {
